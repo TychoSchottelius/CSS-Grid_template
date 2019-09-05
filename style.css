@@ -1,0 +1,65 @@
+body {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+article {
+    padding: 2em;
+    margin: 1em;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: azure;
+}
+
+footer{
+    padding: 2em;
+    margin: 1em;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: gainsboro;
+    margin-top: 2em;
+}
+
+h1 {
+    font-family: "monospace";
+    text-align: center;
+}
+
+h2{
+    font-family: "monospace";
+}
+
+@media (min-width: 640px) {
+    section{
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(2, 3fr);
+        grid-auto-rows: minmax(50px, auto);
+    }
+}
+
+footer{
+    grid-column: 1/-1;
+}
+
+header{
+    grid-column: 1/-1;
+}
+
+h2{
+    grid-column: 1/-1;
+    margin-left: 3em;
+}
+
+#row6{
+    grid-row:6;
+}
+
+@media (min-width: 1140px){
+    section{
+        grid-template-columns: repeat(3, 3fr);
+    }
+
+    h1{
+        grid-column: 2/-1;
+    }
+}
